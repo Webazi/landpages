@@ -1,0 +1,257 @@
+.bgi {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Tinggi 100% dari tinggi viewport */
+    width: 100vw; /* Lebar 100% dari lebar viewport */
+    font-family: Arial, sans-serif;
+    
+    background-image: url('./pexels-pixabay-358528.jpg');
+    background-size: cover; /* Menutupi seluruh area elemen */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-position: center; /* Memusatkan gambar di tengah elemen */
+    background-attachment: fixed; /* Membuat latar belakang tetap saat scroll */
+    color: white;
+    overflow-y: scroll;
+     scrollbar-width: none; /* Firefox: Menghilangkan scrollbar */
+    -ms-overflow-style: none;
+    
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.nama{
+    text-align: center;
+   
+}
+
+.txt{
+   
+    animation: anjay 4s ;
+    overflow: hidden;
+    font-family: monospace;
+}
+@keyframes anjay{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    
+    /* Memusatkan secara horizontal */
+    justify-content: center; /* Memusatkan secara vertikal */
+    
+    
+
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    
+    /* Memusatkan secara horizontal */
+    justify-content: center; /* Memusatkan secara vertikal */
+    
+    
+
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    /* Memusatkan secara horizontal */
+    justify-content: center; /* Memusatkan secara vertikal */
+    gap: 100px;
+    
+}
+
+
+/* navbar */
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(130deg,rgba(255, 255, 255, 0.073),rgba(255,255,255,0));
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(10px);
+   border: 1px solid rgba(255,255,255,0.18);
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Membagi ruang secara merata antara elemen */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.logo {
+    margin: 0; /* Menghapus margin default dari elemen p */
+    animation: Logo 3s ;
+
+}
+
+@keyframes Logo{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+.nav-links {
+    list-style-type: none; /* Menghapus bullet points dari list */
+    margin-right: 15px; /* Menghapus margin default dari ul */
+    padding: px; /* Menghapus padding default dari ul */
+    display: flex; 
+    animation: ogo 3s;/* Menampilkan list items secara horizontal */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Memberi jarak antar item */
+}
+
+.nav-links a {
+    text-decoration: none; /* Menghapus garis bawah dari link */
+    color: #ffffff; /* Mengatur warna link */
+    text-decoration-line: none;
+    
+}
+
+@keyframes ogo{
+    from{
+        opacity: 0;
+        transform: translateY(-60px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.nav-links a:hover {
+    text-decoration: none; /* Menghapus garis bawah dari link */
+    color: #0797cb; /* Mengatur warna link */
+    text-decoration-line: none;
+    
+}
+
+/* caards*/
+
+.cardd{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.caard{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+
+}
+
+.cardc{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    flex: 2 2 200px; /* Elemen akan memiliki basis ukuran 200px dan dapat tumbuh/menciut */
+    min-width: 200px; /* Pastikan elemen tidak lebih kecil dari 200px */
+    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam ukuran elemen */
+     /* Contoh background untuk kartu */
+    padding: 20px; /* Memberikan padding di dalam kartu */
+    margin: 10px; /* Memberikan margin antar kartu */
+     /* Contoh border untuk kartu */
+    border-radius: 8px;
+   animation: efek linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes efek {
+    from{
+        opacity: 0;
+       scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes efeks {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.hh{
+    
+    animation-timeline: view();
+    text-align: center;
+    animation-range: entry 0% cover 10%;
+}
+.gambar1{
+    background-image: url('./pexels-pixabay-358528.jpg');
+    background-size: contain; /* Menutupi seluruh area elemen */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-position: center;
+    padding: 100px; /* Memusatkan gambar di tengah elemen */
+    
+    
+}
+.gambar2{
+    background-image: url('./BB1msG0V.jpg');
+    background-size: contain; /* Menutupi seluruh area elemen */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-position: center;
+    padding: 100px; /* Memusatkan gambar di tengah elemen */
+    
+    
+}
+.gambar3{
+    background-image: url('./pexels-vlada-karpovich-4448847.jpg');
+    background-size: contain; /* Menutupi seluruh area elemen */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-position: center;
+    padding: 100px; /* Memusatkan gambar di tengah elemen */
+    
+    
+}
