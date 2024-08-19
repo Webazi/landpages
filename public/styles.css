@@ -186,7 +186,7 @@ nav {
     background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    
+    text-align: center;
     padding: 30px;
     border: 1px solid rgba(255,255,255,0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -206,29 +206,14 @@ nav {
 @keyframes efek {
     from{
         opacity: 0;
-       scale: 0;
+        transform: translateX(-100px);
     }
     to{
         opacity: 1;
-        scale: 1;
+        transform: translateX(0px);
     }
 }
-@keyframes efeks {
-    from{
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-.hh{
-    
-    animation-timeline: view();
-    text-align: center;
-    animation-range: entry 0% cover 10%;
-}
+
 .gambar1{
     background-image: url('./pexels-pixabay-358528.jpg');
     background-size: contain; /* Menutupi seluruh area elemen */
