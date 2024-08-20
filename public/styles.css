@@ -1,6 +1,4 @@
 .bgi {
-    margin: 0;
-    padding: 0;
     height: 100vh; /* Tinggi 100% dari tinggi viewport */
     width: 100vw; /* Lebar 100% dari lebar viewport */
     font-family: Arial, sans-serif;
@@ -9,7 +7,7 @@
     background-size: cover; /* Menutupi seluruh area elemen */
     background-repeat: no-repeat; /* Mencegah pengulangan gambar */
     background-position: center; /* Memusatkan gambar di tengah elemen */
-    background-attachment: fixed; /* Membuat latar belakang tetap saat scroll */
+    /* Membuat latar belakang tetap saat scroll */
     color: white;
     overflow-y: scroll;
      scrollbar-width: none; /* Firefox: Menghilangkan scrollbar */
@@ -22,13 +20,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     scrollbar-width: none; /* Firefox: Menghilangkan scrollbar */
+    -ms-overflow-style: none;
+    justify-content: center;
     
 }
 
+.informasi{
+    padding: 50px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    background-color: #202722;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+   
+}
 
+.sss {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .nama{
     text-align: center;
    
+}
+
+.wq{
+    color: #28d0fa;
+    
+
+}
+.qw{
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    
 }
 
 .txt{
@@ -163,12 +190,26 @@ nav {
 }
 
 /* caards*/
-
+.hh h1{
+    padding: 40px;
+    color: white;
+    font-family: sans-serif;
+}
+.bgb{
+    background-color: #202722;
+    margin: 0;
+}
 .cardd{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(./096.jpg);
+    background-size: cover; /* Menutupi seluruh area elemen */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-position: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     
    
 }
@@ -187,20 +228,22 @@ nav {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     text-align: center;
-    padding: 30px;
+    padding: 50px;
     border: 1px solid rgba(255,255,255,0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     flex: 2 2 200px; /* Elemen akan memiliki basis ukuran 200px dan dapat tumbuh/menciut */
     min-width: 200px; /* Pastikan elemen tidak lebih kecil dari 200px */
     box-sizing: border-box; /* Memastikan padding dan border dihitung dalam ukuran elemen */
      /* Contoh background untuk kartu */
-    padding: 20px; /* Memberikan padding di dalam kartu */
+    /* Memberikan padding di dalam kartu */
     margin: 10px; /* Memberikan margin antar kartu */
      /* Contoh border untuk kartu */
     border-radius: 8px;
    animation: efek linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
+    
+    color: white;
 }
 
 @keyframes efek {
@@ -228,7 +271,7 @@ nav {
     background-size: contain; /* Menutupi seluruh area elemen */
     background-repeat: no-repeat; /* Mencegah pengulangan gambar */
     background-position: center;
-    padding: 100px; /* Memusatkan gambar di tengah elemen */
+    padding: 100px;/* Memusatkan gambar di tengah elemen */
     
     
 }
@@ -240,4 +283,36 @@ nav {
     padding: 100px; /* Memusatkan gambar di tengah elemen */
     
     
+}
+@media (max-width: 600px) {
+    .informasi {
+        font-size: 10px;
+    }
+    
+    .caard {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: scroll;
+        gap: 1rem;
+        padding: 10px;
+    }
+    
+    .cardc {
+        justify-content: center;
+        align-items: center;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin: 5px;
+        width: 90%; /* Mengatur lebar agar tidak terlalu besar di layar kecil */
+        min-width: auto; /* Menghapus batas minimal untuk memungkinkan fleksibilitas */
+        box-sizing: border-box; /* Pastikan padding dan margin dihitung dalam lebar elemen */
+    }
+    
+    .gambar1, .gambar2, .gambar3 {
+        padding: 100px; /* Mengurangi padding untuk menghemat ruang di layar kecil */
+        background-size: cover; /* Menyesuaikan gambar agar tetap menarik pada ukuran kecil */
+    }
 }
