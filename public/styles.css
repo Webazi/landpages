@@ -1,17 +1,20 @@
+body{
+    overflow-x: hidden;
+}
+
 .bgi {
     height: 100vh; /* Tinggi 100% dari tinggi viewport */
     width: 100vw; /* Lebar 100% dari lebar viewport */
     font-family: Arial, sans-serif;
     
-    background-image: url('./pexels-pixabay-358528.jpg');
+    background-image: url('./58.jpg');
     background-size: cover; /* Menutupi seluruh area elemen */
     background-repeat: no-repeat; /* Mencegah pengulangan gambar */
     background-position: center; /* Memusatkan gambar di tengah elemen */
     /* Membuat latar belakang tetap saat scroll */
     color: white;
     overflow-y: scroll;
-     scrollbar-width: none; /* Firefox: Menghilangkan scrollbar */
-    -ms-overflow-style: none;
+
     
     
 }
@@ -19,10 +22,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
      scrollbar-width: none; /* Firefox: Menghilangkan scrollbar */
     -ms-overflow-style: none;
-    justify-content: center;
     
 }
 
@@ -35,7 +37,28 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    
    
+}
+.jkj{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    animation: www linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+@keyframes www {
+    from{
+        opacity: 0;
+        transform: translateX(-60%);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
 }
 
 .sss {
@@ -44,6 +67,10 @@
 }
 .nama{
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
    
 }
 
@@ -60,9 +87,11 @@
 
 .txt{
    
-    animation: anjay 4s ;
+    animation: anjay 10s ;
     overflow: hidden;
     font-family: monospace;
+    text-shadow: 2px 4px 7px rgba(0, 0, 0, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 @keyframes anjay{
     from{
@@ -194,6 +223,7 @@ nav {
     padding: 40px;
     color: white;
     font-family: sans-serif;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .bgb{
     background-color: #202722;
@@ -204,12 +234,12 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./096.jpg);
+    background-image: url(./pp.jpg);
     background-size: cover; /* Menutupi seluruh area elemen */
     background-repeat: no-repeat; /* Mencegah pengulangan gambar */
     background-position: center;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
     
    
 }
@@ -242,18 +272,19 @@ nav {
    animation: efek linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
-    
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
     color: white;
+    
 }
 
 @keyframes efek {
     from{
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateY(200px);
     }
     to{
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 
@@ -267,7 +298,7 @@ nav {
     
 }
 .gambar2{
-    background-image: url('./BB1msG0V.jpg');
+    background-image: url('./pexels-pixabay-358528.jpg');
     background-size: contain; /* Menutupi seluruh area elemen */
     background-repeat: no-repeat; /* Mencegah pengulangan gambar */
     background-position: center;
@@ -276,13 +307,134 @@ nav {
     
 }
 .gambar3{
-    background-image: url('./pexels-vlada-karpovich-4448847.jpg');
+    background-image: url('./pexels-pixabay-358528.jpg');
     background-size: contain; /* Menutupi seluruh area elemen */
     background-repeat: no-repeat; /* Mencegah pengulangan gambar */
     background-position: center;
     padding: 100px; /* Memusatkan gambar di tengah elemen */
     
     
+}
+.spca{
+    padding: 40px;
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #202722;
+    
+    
+}
+.skil{
+    background:linear-gradient(135deg,rgba(0, 119, 255, 0.883),rgba(120, 183, 255, 0));
+    
+    height: 100vh;
+    
+    
+
+}
+
+.skill{
+    
+    padding: 20px;
+    color: white;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+     /* Pastikan elemen tidak lebih kecil dari 200px */
+    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam ukuran elemen */
+     /* Contoh background untuk kartu */
+    /* Memberikan padding di dalam kartu */
+    margin: 50px; /* Memberikan margin antar kartu */
+     /* Contoh border untuk kartu */
+    border-radius: 8px;
+    
+    
+}
+.t{
+    margin: 10px;
+}
+.bgcc{
+    background-image: url(./096.jpg);
+    background-size: cover; /* Menutupi seluruh area elemen */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    overflow-x: scroll;
+    background-position: center;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+
+.images{
+    background-image: url(./21492.jpg);
+    background-size: cover; /* Menutupi seluruh area elemen */
+    background-repeat: no-repeat;
+    padding: 100px;
+    
+    
+}
+
+.sos{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.ig{
+    box-shadow: 32px 16px 8px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50%;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 50px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 32px 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 0;
+}
+.igg{background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 50px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 32px 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 100%;
+    margin: px;
+    padding: 0;
+}
+.iggs{background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 50px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 32px 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10%;
+    margin: px;
+    padding: 0;
+}
+.medsos{
+    text-align: center;
+}
+.med{
+    display: flex;
+    justify-content: center;
+    
+}
+.medd{
+    margin: 20px;
+    padding: 40px;
+    color: whitesmoke;
 }
 @media (max-width: 600px) {
     .informasi {
@@ -293,12 +445,13 @@ nav {
         flex-direction: row;
         flex-wrap: nowrap;
         width: 100%;
-        overflow-x: scroll;
+        overflow-x: auto;
         gap: 1rem;
         padding: 10px;
     }
     
     .cardc {
+        display: inline-block;
         justify-content: center;
         align-items: center;
         color: white;
@@ -308,9 +461,20 @@ nav {
         margin: 5px;
         width: 90%; /* Mengatur lebar agar tidak terlalu besar di layar kecil */
         min-width: auto; /* Menghapus batas minimal untuk memungkinkan fleksibilitas */
-        box-sizing: border-box; /* Pastikan padding dan margin dihitung dalam lebar elemen */
+        box-sizing: border-box; 
+        animation: efek linear;
+        animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+   
     }
-    
+    .skill{
+        font-size: 10px;
+        padding: 20px;
+        margin: 2px;
+        width: 90%; /* Mengatur lebar agar tidak terlalu besar di layar kecil */
+        min-width: auto;
+        margin: 10px;  
+    }
     .gambar1, .gambar2, .gambar3 {
         padding: 100px; /* Mengurangi padding untuk menghemat ruang di layar kecil */
         background-size: cover; /* Menyesuaikan gambar agar tetap menarik pada ukuran kecil */
